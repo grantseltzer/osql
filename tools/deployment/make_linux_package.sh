@@ -279,7 +279,7 @@ function main() {
     for file in `"$SCRIPT_DIR/getfiles.py" --build "$BUILD_DIR/" --base "$SOURCE_DIR/"`
     do
       mkdir -p `dirname "$SOURCE_DEBUG_DIR/$file"`
-      cp "$SOURCE_DIR/$file" "$SOURCE_DEBUG_DIR/$file"
+      cp "$file" "$SOURCE_DEBUG_DIR/$file"
     done
   fi
 
